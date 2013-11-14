@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<application xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"  xmlns:application="http://java.sun.com/xml/ns/javaee" xmlns="http://java.sun.com/xml/ns/javaee" xsi:schemaLocation="http://java.sun.com/xml/ns/javaee http://java.sun.com/xml/ns/javaee/application_5.xsd" id="Application_ID" version="5">
+  <display-name> 
+JEE5ComptesEAR</display-name>
+  <module>
+    <web>
+      <web-uri>JEE5ComptesWeb.war</web-uri>
+      <context-root>JEE5Comptes</context-root>
+    </web>
+  </module>
+  <module>
+    <ejb>JEE5ComptesEJB.jar</ejb>
+  </module>
+</application>

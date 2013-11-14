@@ -1,0 +1,52 @@
+<html>
+	<body>
+	<h1>Manipulation des comptes bancaires</h1>
+	<h2>Créer un client :</h2>
+		<form method="post"  action="gestion/creerClient.jsp">
+			numéro client : <input type="text" name="numeroClient" />
+			nom : <input type="text" name="nom" />
+			adresse : <input type="text" name="adresse" />
+			<input type="submit" value="creer" name="xxx">
+		</form>
+	<h2>Créer un compte :</h2>
+		<form method="post"  action="gestion/creerCompte.jsp">
+			compte : <input type="text" name="compte" />
+			détenteur : <input type="text" name="detenteur" />
+			valeur : <input type="text" name="somme" />
+			<input type="submit" value="creer" name="xxx">
+		</form>
+	<h2>Créditer ou débiter un compte :</h2>
+		<form method="get"  action="gestion/crediter.jsp">
+			compte : <input type="text" name="compte" />
+			valeur : <input type="text" name="somme" />
+			<input type="submit" value="crediter" name="xxx">
+		</form>
+		<form method="get"  action="gestion/debiter.jsp">
+			compte : <input type="text" name="compte" />
+			valeur : <input type="text" name="somme" />
+			<input type="submit" value="débiter" name="xxx">
+		</form>
+	<h2>Effectuer un transfert :</h2>
+		<form method="get"  action="gestion/transfert">
+			de : <input type="text" name="compte1" />
+			vers : <input type="text" name="compte2" />
+			valeur : <input type="text" name="somme" />
+			<input type="submit" value="transferer" name="xxx">
+		</form>
+	<h2>Visualiser un compte :</h2>
+		<form method="get"  action="gestion/lister.jsp">
+			compte : <input type="text" name="numero" />
+			<input type="submit" value="visualiser" name="xxx">
+		</form>
+	<h2>Voir les comptes donc le montant est inférieur à une certaine somme :</h2>
+		<form method="get"  action="gestion/lister.jsp">
+			montant : <input type="text" name="soldeMax" />
+			<input type="submit" value="visualiser" name="xxx">
+		</form>
+	<h2>Voir les comptes associés à un detenteur donné :</h2>
+		<form method="get"  action="gestion/lister.jsp">
+			detenteur : <input type="text" name="detenteur" />
+			<input type="submit" value="visualiser" name="xxx">
+		</form>
+	</body>
+</html>
